@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+
+	<script src="/lib/requirejs/require.js"></script>
+	<script src="/lib/ext-4.2.0/ext-all.js"></script>
+	<link rel="stylesheet" href="/css/style.css">	
+	<link rel="stylesheet" href="/lib/ext-4.2.0/resources/css/ext-all-neptune.css">
+</head>
+<body>
+	<script>
+	// require(['js/nemgo/test'],function(){
+	// 	var bla = new blub();
+	// 	bla.test();
+	// });
+
+	require(['js/nemgo/index.js'],function(){
+		var bookGrid = new Nemgo({
+			title		: 'Books',
+			url			: '/book'
+    }).build({type:'grid',destination_id:'bookGrid'});
+    var authorGrid = new Nemgo({
+			title		: 'Authors',
+			url			: '/author'
+    }).build({type:'grid',destination_id:'authorGrid'});
+	});
+	
+	</script>
+	<div id="bookGrid"></div>
+
+	<div id="authorGrid"></div>
+</body>
+</html>

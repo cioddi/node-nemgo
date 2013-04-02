@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "name": "node-extjs-mongo",
+  "description": "",
+  "keywords": [
+    "extjs",
+    "MongoDB",
+    "crud",
+    "rest",
+    "express"
+  ],
+  "homepage": "https://nettwurk.org/",
+  "author": "Max Tobias Weber <tobi@nettwurk.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cioddi/node-extjs-mongo"
+  },
+  "dependencies": {
+    "express": "~3.1.0",
+    "passport": "~0.1.16",
+    "mongoose": "~3.6.0"
+  },
+  "devDependencies": {
+    "zombie": "*",
+    "tap": "*",
+    "querystring": "*"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "engines": { "node": ">= 0.8.0" },
+  "scripts": {
+    "test": "tap --tap ./test/init.js"
+  }
+}
